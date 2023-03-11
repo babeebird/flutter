@@ -34,14 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void boy_space() async {
     /*
     var result = await Dio().get(
-      "https://www.youthcenter.go.kr/opi/wantedSpace.do?pageIndex=1&display=5&pageType=1&srchAreaCpvn=003002001&openApiVlak=7a49a956d6d58ce8850d74f8",
+      "https://www.youthcenter.go.kr/opi/wantedSpace.do?pageIndex=1&display=5&pageType=1&srchAreaCpvn=003002001&openApiVlak=인증키번호",
     );
     */
     var url = 'https://www.youthcenter.go.kr/opi/wantedSpace.do';
     var result = await Dio().get(
       url,
       queryParameters: {
-        'openApiVlak': '7a49a956d6d58ce8850d74f8', //인증키
+        'openApiVlak': '', //인증키
         'display': 7, //출력건수(기본 10 ~ 최대 100)
         'pageIndex': 1, //조회페이지(기본 1)
         'pageType': 1, //화면타입(목록화면-1, 상세화면-2)
