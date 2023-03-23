@@ -1,3 +1,4 @@
+import 'package:book_list/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class BookTile extends StatelessWidget {
@@ -18,7 +19,13 @@ class BookTile extends StatelessWidget {
     return ListTile(
       title: Text(title),
       leading: Image.network(image),
-      onTap: () {}, // 눌렀을 때의 이벤트 선언. 이 부분에서 화면 이동 시 subtitle과 description 전달.
+      onTap: () {
+        Navigator.of(context).push( 
+          MaterialPageRoute(
+            builder: (context) => DetailScreen(),
+          ),
+        );
+      }, // 눌렀을 때의 이벤트 선언. 이 부분에서 화면 이동 시 subtitle과 description 전달.
     );
   }
 }

@@ -8,7 +8,6 @@ main()은 플러터 프로그램이 최초로 실행되도록 하는 내장함�
 runApp()은 위젯이 스크린에 나타나도록 실행(rendering)하는 내장함수.
 
 MyApp()이 위젯트리의 뿌리 위젯이라고 할 수 있음.
-
 */
 
 class MyApp extends StatelessWidget {
@@ -20,9 +19,10 @@ class MyApp extends StatelessWidget {
     Theme, MediaQuery, Navigator 등 다른 위젯과 애플리케이션의 상태 정보를 액세스할 수 있음.
     */
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Book List App',
-      //home: ListScreen(),
-      home: DetailScreen(),
+      home: ListScreen(),
+      //home: DetailScreen(),
     );
   }
 }
