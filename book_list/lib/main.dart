@@ -3,6 +3,8 @@ import 'package:book_list/screens/list_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
+
 /*
 main()은 플러터 프로그램이 최초로 실행되도록 하는 내장함수이고,
 runApp()은 위젯이 스크린에 나타나도록 실행(rendering)하는 내장함수.
